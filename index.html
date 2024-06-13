@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Store</title>
+    <title>My Store - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,29 +13,37 @@
     <button id="view-cart">View Cart</button>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <section class="products">
-        <div class="product">
-            <img src="basic.png" alt="Product 1">
-            <h2>Product 1</h2>
-            <p>$20.00</p>
-            <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+    <section class="hero">
+        <h2>Welcome to My Store</h2>
+        <p>Explore our wide range of products and find exactly what you're looking for.</p>
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$20.00</p>
+                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$25.00</p>
+                <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+            </div>
+            <!-- Add more featured products here -->
         </div>
-        <div class="product">
-            <img src="medium.png" alt="Product 2">
-            <h2>Product 2</h2>
-            <p>$25.00</p>
-            <button class="add-to-cart" data-product-id="2">Add to Cart</button>
-        </div>
-        <!-- Add more product items here -->
     </section>
 </main>
 
