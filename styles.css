@@ -66,3 +66,19 @@ button {
 button:hover {
     background-color: #555;
 }
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: none;
+    z-index: 999;
+}
+
+.cart.show {
+    display: block;
+}
