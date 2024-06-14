@@ -1,5 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Handling View Cart Button
     const viewCartButton = document.getElementById("view-cart");
+    if (viewCartButton) {
+        viewCartButton.addEventListener("click", function() {
+            const cartArea = document.querySelector(".cart");
+            if (cartArea) {
+                cartArea.classList.toggle("show");
+            }
+        });
+    }
+
+    // Handling Add to Cart Buttons
     const addToCartButtons = document.querySelectorAll(".add-to-cart");
     const cartArea = document.createElement("div");
     cartArea.classList.add("cart");
@@ -7,10 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.appendChild(cartArea);
 
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || {};
-
-    viewCartButton.addEventListener("click", function() {
-        cartArea.classList.toggle("show");
-    });
 
     addToCartButtons.forEach(button => {
         button.addEventListener("click", function() {
@@ -38,4 +45,3 @@ document.addEventListener("DOMContentLoaded", function() {
     // Populate cart on page load
     updateCart();
 });
-
