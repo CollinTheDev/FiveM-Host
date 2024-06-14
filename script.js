@@ -38,3 +38,4 @@ document.addEventListener("DOMContentLoaded", function() {
     // Populate cart on page load
     updateCart();
 });
+
